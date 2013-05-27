@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dYa-89-GwX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Slide Controller-->
+        <scene sceneID="qGx-cp-QI9">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="dYa-89-GwX" customClass="MSSlideController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zDt-yW-NQ1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yOT-I2-kK9" kind="relationship" relationship="rootViewController" id="uVL-Ne-bql"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcD-fk-ZTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="122"/>
+        </scene>
+        <!--View ControllerA-->
+        <scene sceneID="yNe-yz-HCQ">
+            <objects>
+                <viewController id="yOT-I2-kK9" customClass="MSViewControllerA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dx0-fj-5QK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhh-Sw-YBV">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jIN-pu-KX9" kind="push" id="qVQ-c6-oDb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zhh-Sw-YBV" firstAttribute="centerX" secondItem="dx0-fj-5QK" secondAttribute="centerX" type="default" id="3AU-S4-Iq6"/>
+                            <constraint firstItem="zhh-Sw-YBV" firstAttribute="top" secondItem="dx0-fj-5QK" secondAttribute="top" constant="230" id="gob-bB-YZH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b2e-WJ-xsb">
+                        <barButtonItem key="leftBarButtonItem" title="A" id="nkN-lJ-k6T"/>
+                        <barButtonItem key="rightBarButtonItem" title="B" id="wj1-sj-IbA"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FKr-LU-sJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="122"/>
+        </scene>
+        <!--View ControllerB-->
+        <scene sceneID="46i-6q-UUb">
+            <objects>
+                <viewController id="jIN-pu-KX9" customClass="MSViewControllerB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gFL-Zt-LuZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhr-Ab-x6k">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xhr-Ab-x6k" firstAttribute="top" secondItem="gFL-Zt-LuZ" secondAttribute="top" constant="241" id="IgT-cr-HDq"/>
+                            <constraint firstItem="Xhr-Ab-x6k" firstAttribute="centerX" secondItem="gFL-Zt-LuZ" secondAttribute="centerX" type="default" id="Irc-59-pED"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I1e-he-VTL">
+                        <barButtonItem key="rightBarButtonItem" title="C" id="uc7-Dv-3Go"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adi-s8-Ag0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="122"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="MSSlideController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MSSlideController.h"/>
+        </class>
+        <class className="MSViewControllerA" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MSViewControllerA.h"/>
+        </class>
+        <class className="MSViewControllerB" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MSViewControllerB.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
