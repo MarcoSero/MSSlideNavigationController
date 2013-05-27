@@ -5,11 +5,11 @@
 //
 
 
-#import "MSSlideController.h"
+#import "MSSlideNavigationController.h"
 #import "MSPanGestureRecognizer.h"
 #import "UIView+ScreenShot.h"
 
-@interface MSSlideController ()
+@interface MSSlideNavigationController ()
 @property(weak, nonatomic) UIViewController *currentViewController;
 @property(weak, nonatomic) UIViewController *previousViewController;
 @property(strong, nonatomic) UIImageView *currentViewControllerImageView;
@@ -23,7 +23,7 @@
 @property (strong, nonatomic) NSMutableArray *previousRightButtonItemViews;
 @end
 
-@implementation MSSlideController
+@implementation MSSlideNavigationController
 
 - (void)viewDidLoad
 {

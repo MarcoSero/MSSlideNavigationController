@@ -13,7 +13,7 @@
 		62DD21BA260F115ED18F2ECA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DD277E9B88BFF6136AF2EF /* CoreGraphics.framework */; };
 		62DD22EFB49872DE77577087 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD249B21D28B69922DE667 /* MSAppDelegate.m */; };
 		62DD23A3FB9CEADDC9843D4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2643C71D17D02C8B7A8F /* InfoPlist.strings */; };
-		62DD247071C677270EE19249 /* MSSlideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD20046865F6D900E7F4CD /* MSSlideController.m */; };
+		62DD247071C677270EE19249 /* MSSlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD20046865F6D900E7F4CD /* MSSlideNavigationController.m */; };
 		62DD25B97A79566B8EF34494 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DD275F40B13388E5804E18 /* MainStoryboard.storyboard */; };
 		62DD25D375B3CA7DB56A791F /* UIView+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2F1F37F9D02C84481598 /* UIView+ScreenShot.m */; };
 		62DD27302B159AF3C2734DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DD2A5C6D2883E48CC7C2C8 /* UIKit.framework */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		62DD20046865F6D900E7F4CD /* MSSlideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSlideController.m; sourceTree = "<group>"; };
+		62DD20046865F6D900E7F4CD /* MSSlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSlideNavigationController.m; sourceTree = "<group>"; };
 		62DD200C230388D1814E4AAD /* MSSlideControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSSlideControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
 		62DD22049F405235DF2AE09D /* MSSlideControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSSlideControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DD221C45B8FA858E63600B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,7 +41,7 @@
 		62DD26B2041160B5A36E640D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		62DD277E9B88BFF6136AF2EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		62DD295786C97100C6E7F1C0 /* MSViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSViewControllerA.h; sourceTree = "<group>"; };
-		62DD29E5C205E71B02BD87CA /* MSSlideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSlideController.h; sourceTree = "<group>"; };
+		62DD29E5C205E71B02BD87CA /* MSSlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSlideNavigationController.h; sourceTree = "<group>"; };
 		62DD2A5C6D2883E48CC7C2C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		62DD2BE9EE77861F576A2B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62DD2BEE7D8ACCCC8FDD2CC3 /* MSPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPanGestureRecognizer.m; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 				62DD275F40B13388E5804E18 /* MainStoryboard.storyboard */,
 				62DD295786C97100C6E7F1C0 /* MSViewControllerA.h */,
 				62DD260CEF3114ABD8CA8540 /* MSViewControllerA.m */,
-				62DD2FFC20811AC96651AA1D /* MSSlideController */,
 				62DD2C6A0BDDC803D6E699B9 /* MSViewControllerB.m */,
 				62DD2401EC438C897CFE70FA /* MSViewControllerB.h */,
 			);
@@ -112,6 +111,7 @@
 		62DD2C22903764ACBB9FCD10 = {
 			isa = PBXGroup;
 			children = (
+				62DD2FFC20811AC96651AA1D /* MSSlideNavigationController */,
 				62DD2FD3E4CBE3E0DF87F90E /* Products */,
 				62DD27C7D9796291BFF9F59C /* Frameworks */,
 				62DD23A159D49AAF317FCEDB /* MSSlideControllerDemo */,
@@ -126,17 +126,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		62DD2FFC20811AC96651AA1D /* MSSlideController */ = {
+		62DD2FFC20811AC96651AA1D /* MSSlideNavigationController */ = {
 			isa = PBXGroup;
 			children = (
 				62DD2E98B9D8BA7ABAE969DC /* MSPanGestureRecognizer.h */,
 				62DD2BEE7D8ACCCC8FDD2CC3 /* MSPanGestureRecognizer.m */,
-				62DD29E5C205E71B02BD87CA /* MSSlideController.h */,
-				62DD20046865F6D900E7F4CD /* MSSlideController.m */,
+				62DD29E5C205E71B02BD87CA /* MSSlideNavigationController.h */,
+				62DD20046865F6D900E7F4CD /* MSSlideNavigationController.m */,
 				62DD2F1F37F9D02C84481598 /* UIView+ScreenShot.m */,
 				62DD247CA62BFB37CF47FA2B /* UIView+ScreenShot.h */,
 			);
-			path = MSSlideController;
+			path = MSSlideNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +208,7 @@
 				62DD22EFB49872DE77577087 /* MSAppDelegate.m in Sources */,
 				62DD2E2C94ACA6882307CB6C /* MSViewControllerA.m in Sources */,
 				62DD2910A4F0966845FE1B28 /* MSPanGestureRecognizer.m in Sources */,
-				62DD247071C677270EE19249 /* MSSlideController.m in Sources */,
+				62DD247071C677270EE19249 /* MSSlideNavigationController.m in Sources */,
 				62DD25D375B3CA7DB56A791F /* UIView+ScreenShot.m in Sources */,
 				62DD218C5DF90BF8A384B43F /* MSViewControllerB.m in Sources */,
 			);

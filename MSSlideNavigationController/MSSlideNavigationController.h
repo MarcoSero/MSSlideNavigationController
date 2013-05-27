@@ -8,5 +8,5 @@
 #import <Foundation/Foundation.h>
 
 
-@interface MSSlideController : UINavigationController
+@interface MSSlideNavigationController : UINavigationController
 @end

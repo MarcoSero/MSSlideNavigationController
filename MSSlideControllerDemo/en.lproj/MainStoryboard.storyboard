@@ -7,7 +7,7 @@
         <!--Slide Controller-->
         <scene sceneID="qGx-cp-QI9">
             <objects>
-                <navigationController definesPresentationContext="YES" id="dYa-89-GwX" customClass="MSSlideController" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="dYa-89-GwX" customClass="MSSlideNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zDt-yW-NQ1">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
