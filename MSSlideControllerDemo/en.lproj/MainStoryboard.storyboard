@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Slide Controller-->
+        <!--Slide Navigation Controller-->
         <scene sceneID="qGx-cp-QI9">
             <objects>
                 <navigationController definesPresentationContext="YES" id="dYa-89-GwX" customClass="MSSlideNavigationController" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.36943114649999997" green="1" blue="0.4245242736" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="zhh-Sw-YBV" firstAttribute="centerX" secondItem="dx0-fj-5QK" secondAttribute="centerX" type="default" id="3AU-S4-Iq6"/>
                             <constraint firstItem="zhh-Sw-YBV" firstAttribute="top" secondItem="dx0-fj-5QK" secondAttribute="top" constant="230" id="gob-bB-YZH"/>
@@ -70,7 +70,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.384683424" green="0.84752087929999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Xhr-Ab-x6k" firstAttribute="top" secondItem="gFL-Zt-LuZ" secondAttribute="top" constant="241" id="IgT-cr-HDq"/>
                             <constraint firstItem="Xhr-Ab-x6k" firstAttribute="centerX" secondItem="gFL-Zt-LuZ" secondAttribute="centerX" type="default" id="Irc-59-pED"/>
@@ -86,8 +86,8 @@
         </scene>
     </scenes>
     <classes>
-        <class className="MSSlideController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MSSlideController.h"/>
+        <class className="MSSlideNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MSSlideNavigationController.h"/>
         </class>
         <class className="MSViewControllerA" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MSViewControllerA.h"/>
